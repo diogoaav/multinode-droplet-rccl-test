@@ -25,7 +25,9 @@ This repository contains scripts and documentation for setting up and running RC
 
 ### 1. Network Configuration
 
-First, configure the high-speed network interfaces on both nodes. Update `/etc/netplan/50-cloud-init.yaml`:
+First, configure the high-speed network interfaces on both nodes. For DigitalOcean Droplets, refer to the [Multi-Node GPU Configuration Guide](https://docs.digitalocean.com/products/droplets/how-to/gpu/configure-multi-node/) for additional context.
+
+Update `/etc/netplan/50-cloud-init.yaml`:
 
 ```yaml
 # Add these interfaces after existing eth1 configuration
